@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Project</title>
+<style>
+  body {
+      margin: 0;
+      padding: 0;
+      line-height: 1.5em;
+     }  
+  #header {
+      background-color: black;
+      font-family: Arial, Helvetica, sans-serif;
+      height: 100px;
+     }
+  #contentwrapper {
+       float: left;
+       width: 100%;
+     }  
+  #contentcolum {
+       margin: 0 230px 0 230px;
+     }
+  #leftcolumn {
+       float: left;
+       width: 230px;
+       margin-left: -100%;
+       background-color: #24c8ff ;
+     }
+   #rightcolumn {
+       float: left;
+       width: 230px;
+       margin-left: -230%;
+       background-color: #fffb00 ;
+     }  
+    .innertext {
+        margin: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #5e5e5e;
+      }
+    #footer {
+        clear: left; /* cannot float on left */
+        width: 100%;
+        background-color: black;
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        padding: 4px;
+      }   
+    /* ### Navigation Bar ###*/
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+      }
+   li {
+         float: left;
+         border-right: 1px solid #bbb;
+      }     
+   li :last-child {
+       border-right: none;
+     }
+   li a {
+       display: block;
+       color: white;
+       text-align: center;
+       padding: 14px 16px;
+       text-decoration: none;
+     }
+    li a:hover:not(.active) {
+        background-color: #808080;
+     }
+    .active {
+        background-color: #0099ff;
+    } 
+    
+    
+</style>
+
+</head>
+<body>
+
+
+
+</body>
+</html>
