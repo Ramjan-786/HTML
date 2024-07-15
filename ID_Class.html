@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ID and Class attributes</title>
+<style>
+    #FirstID {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+    }
+
+    .city {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+<!-- "id" attribute specifies a unique id for an HTML element. The value of the id attribute must be unique within the HTML document. with hwlp of id apply style & javascript -->
+<!-- The syntax for id is: write a hash character (#), followed by an id name. Then, define the CSS properties within curly braces {}. -->
+<h2 id="FirstID">Ramjan is claver Boy</h2>
+
+<!--"id" with value ha each tag madhe different asava v "class" with value hi different tag madhe same vapru shakto -->
+
+<!-- An element with a unique id -->
+<h1 id="myHeader">My Cities</h1>
+
+<!-- Multiple elements with same class -->
+<h2 class="city">London</h2>
+<p>London is the capital of England.</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France.</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+
+<h2>HTML Bookmarks with ID and Links Or, add a link to the bookmark ("Jump to Chapter 4"), from another page:</h2>
+<p><a href="#C4">Jump to Chapter 4</a></p>
+<p><a href="#C5">Jump to Chapter 5</a></p>
+<p><a href="html_demo.html#C4">Jump to Chapter 4</a></p>
+
+<h2>Chapter 1</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 2</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 3</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2 id="C4">Chapter 4</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2 id="C5">Chapter 5</h2>
+<p>This chapter explains ba bla bla</p>
+
+
+<h2>Using The id Attribute in JavaScript</h2>
+<h1 id="myHeader">Hello World!</h1>
+<button onclick="displayResult()">Change text</button>
+
+<script>
+    function displayResult() {
+      document.getElementById("myHeader").innerHTML = "Have a nice day!";
+    }
+    </script>
+
+<!-- <style>
+.city {
+  background-color: tomato;
+  color: white;
+  padding: 10px;
+} 
+
+.main {
+  text-align: center;
+}
+</style> -->
+<h2>Multiple Classes in single tag</h2>
+<h2 class="city main">London</h2>
+-------------------------------------------------------------------
+<h2>Use of The class Attribute in JavaScript</h2>
+<p>Click the button to hide all element with class name "rj"</p>
+
+<h3 class="rj">Ramjan</h3>
+<p>My self information</p>
+
+<h3 class="rj">salina</h3>
+<p>Sister information</p>
+
+<h3 class="rj">Mustkim</h3>
+<p>Brother information</p>
+
+<button onclick="Hide_h3_tag()">click Me!</button>
+
+<script>
+  function Hide_h3_tag() {
+    var x =document.getElementsByClassName("rj");
+    for(var i =0; i<x.length; i++){
+      x[i].style.display="none";
+      }
+  } 
+</script>
+--------------------------------------------------------------------
+
+<h2>Iframe</h2>
+<!-- Note:
+            The HTML <iframe> tag specifies an inline frame
+            The src attribute defines the URL of the page to embed
+            Always include a title attribute (for screen readers)
+            The height and width attributes specify the size of the iframe
+            Use border:none; to remove the border around the iframe -->
+
+<h2>Iframe - Target for a Link</h2>
+<iframe src="https://insidegnss.com/wp-content/uploads/2021/03/ESA-Scout-HydroGNSS-Satellite-with-credit.jpg" name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
+<p><a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjPNT49Y8Dx-3Bndz13TqqYXKPNMXlJKPCNg&usqp=CAU" target="iframe_a">W3Schools.com</a></p>
+<p>When the target attribute of a link matches the name of an iframe, the link will open in the iframe.</p>
+
+----------------------------------------------------------------------------
+
+<h2>HTML File Paths</h2>
+
+<!-- An absolute file path is the full URL to a file: <img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain"> -->
+<!-- A relative file path points to a file relative to the current page.<img src="/images/picture.jpg" alt="Mountain"> -->
+<!--  file path points to a file in the images folder located in the current folder: <img src="images/picture.jpg" alt="Mountain"> -->
+<!-- the file path points to a file in the images folder located in the folder one level up from the current folder: <img src="../images/picture.jpg" alt="Mountain"> -->
+
+</body>
+</html>

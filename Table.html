@@ -1,0 +1,208 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <title>Document</title>
+<style>
+    /* table,th,td{
+        width: 30%;
+        border: 1px solid blue;
+    } */
+    table{
+        font-family:Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 30%;
+    }
+    th,td{
+      border: 1px solid black;
+      text-align:center;
+      padding:2px;
+    }
+/* Combine Vertical and Horizontal Zebra Stripes
+         tr:nth-child(even) {
+           background-color: rgba(150, 212, 212, 0.4);
+        }
+        th:nth-child(even),td:nth-child(even) {
+            background-color: rgba(150, 212, 212, 0.4);
+        }
+ */
+/* HTML Table - Vertical Zebra Stripes
+      td:nth-child(even), th:nth-child(even) {
+                       background-color: #D6EEEE;
+                }
+ */
+       /* Bordered Table Dividers
+           tr {
+                 border-bottom: 1px solid #ddd;
+                 }
+       */
+    tr:nth-child(even){
+        background-color: turquoise;
+    }
+/* Border Radius Apply */
+    /* table, th, td {
+        border: 1px solid black;
+        border-radius: 10px;
+     } */
+       /* th, td {
+        border: 1px solid black;
+        border-radius: 10px;
+     } */
+/* Border Style Apply:- dotted,dashed,solid,double,groove,ridge,inset,outset,none,hidden */
+     /* th, td {
+          border-style: dotted;
+        } */
+/* Border Color */
+     /* th, td {
+         border-style:solid;
+         border-color: #96D4D4;
+        } */
+
+/* HTML Table Padding */  /*By default the padding is set to 0. text and border madhe gap */
+    /*  th,td{
+      padding:2px;
+    } */
+
+     /* th, td {
+       padding-top: 10px;
+       padding-bottom: 20px;
+       padding-left: 30px;
+       padding-right: 40px;
+     } */
+
+/* HTML Table Spacing */     /* By default the space is set to 2 pixels. cell madhe gap */
+     /* table {
+          border-spacing: 30px;
+        } */
+
+/* Hoverable Table :- Move the mouse over the table rows to see the effect. */
+      /* 
+         tr:hover {background-color: #D6EEEE;}
+     */
+</style>
+
+
+ </head>
+
+ <body>
+
+<!--<table style="width: 50%;"> -->
+<table>
+<tr>
+    <th>Name</th>
+    <th>Mob.No.</th>
+    <th>Location</th>
+</tr>
+
+<tr>
+    <td>Ramjan</td>
+    <td>1111</td>
+    <td>India</td>
+</tr>
+
+<tr>
+    <td>zaid</td>
+    <td>2222</td>
+    <td>Japan</td>
+</tr>
+
+<tr>
+    <td>Mahesh</td>
+    <td>3333</td>
+    <td>Koria</td>
+</tr>
+</table>
+
+
+<!-- HTML Table Column Width [To set the size of a specific column, add the style attribute on a <th> or <td> element:] -->
+    <!--   <tr>
+             <th style="width:70%">Firstname</th>
+             <th>Lastname</th> 
+             <th>Age</th>
+           </tr> -->
+
+<!-- HTML Table Row Height [o set the height of a specific row, add the style attribute on a table row element:] -->
+  <!--  <tr style="height:200px">
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr> -->
+
+<!-- Vertical Table Headers -->
+    <!-- <table style="width:100%">
+          <tr>
+            <th>Firstname</th>
+            <td>Jill</td>
+            <td>Eve</td>
+          </tr>
+          <tr>
+            <th>Lastname</th>
+            <td>Smith</td>
+            <td>Jackson</td>
+          </tr>
+          <tr>
+            <th>Age</th>  
+            <td>50</td>
+            <td>94</td>
+          </tr>
+        </table> -->
+
+<!-- Header for Multiple Columns Using "colspan" attribute AND Table Caption By Caption tag [table Title] 
+                 Note: The <caption> tag should be inserted immediately after the <table> tag.-->
+    <!-- <table>
+        <caption>Monthly savings</caption>  
+           <tr>
+             <th colspan="2">Name</th>
+             <th>Age</th>
+             </tr>
+             <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+            </tr>
+        </table> -->
+
+<!-- HTML Table - Rowspan -->
+     <!-- <table style="width:100%">
+       <tr>
+         <th>Name</th>
+         <td>Jill</td>
+       </tr>
+       <tr>
+         <th rowspan="2">Phone</th>
+         <td>555-1234</td>
+       </tr>
+       <tr>
+         <td>555-8745</td>
+       </tr>
+     </table> -->
+
+                                     <!-- HTML Table Colgroup -->
+                                     
+<!-- Note: The <colgroup> tag must be a child of a <table> element and should be placed before any other table elements, like <thead>, <tr>, <td> etc., but after the <caption> element, if present. -->
+
+<!-- 1.If you want to style the two first columns of a table, use the <colgroup> and <col> elements.  -->
+     <!-- <colgroup>
+         <col span="2" style="background-color: #D6EEEE">
+     </colgroup> -->
+
+<!-- 2.Multiple Col Elements:- If you want to style more columns with different styles, use more <col> elements inside the <colgroup>: -->
+       <!-- <colgroup>
+             <col span="2" style="background-color: #D6EEEE">
+            <col span="3" style="background-color: pink">
+            </colgroup> -->
+
+<!-- 3.Empty Colgroups:- If you want to style columns in the middle of a table, insert a "empty" <col> element (with no styles) for the columns before: -->
+            <!-- <colgroup>
+                   <col span="3">
+                   <col span="2" style="background-color: pink">
+                </colgroup> -->
+
+<!-- 4.Hide Columns :- You can hide columns with the visibility: collapse property -->
+          <!-- <colgroup>
+                   <col span="2">
+                   <col span="3" style="visibility: collapse">
+            </colgroup> -->
+
+
+</body>
+ </html>

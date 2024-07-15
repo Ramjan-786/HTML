@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<title>Form Tag</title>
+</head>
+<body>
+ <!--By default HTTP method get is present--> <!--method="post"-->
+ <!--After you submit, notice that the form values is visible in the address bar of the new browser tab.-->
+ <!--The novalidate attribute is a boolean attribute. --When present, it specifies that the form-data (input) should not be validated when submitted.-->  <!--Note: The enctype attribute can be used only if method="post".--><!--The name attribute is used to reference elements in a JavaScript, or to reference form data after a form is submitted.-->
+   <form name="myform" action="/action_page.java" target="_blank" method="get" autocomplete="on" novalidate  enctype="multipart/form-data">  
+   <!-- The HTML <form> element can contain one or more of the following form elements:
+ <input> <label> <select> <textarea> <button> <fieldset> <legend> <datalist> <output> <option> <optgroup> -->
+
+<h4>fieldset and legend Tag</h4>
+<!--The fieldset element is used to group related data in a form, and the legend element defines a caption for the fieldset element.-->
+<fieldset>   
+  <legend>Personal detils</legend>
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname" value="John" autofocus><br> 
+  <label for="lname">Last Name:</label>
+  <input type="text" id="lname" name="lname" value="Doe"><br>
+  <input type="submit" value="Submit">
+</fieldset>
+<br><br>
+
+   <label for="e-mail">Enter your email</label>
+   <input type="email" id="mail" name="email" autocomplete="off">
+   <input type="submit">
+   
+   <h3>Redio Button</h3>
+   <p>Choose your favorite language</p>
+   <input type="radio" id="html" name="fav_lang" value="HTML">
+   <label for="html">HTML</label><br>
+   <input type="radio" id="css" name="fav_lang" value="CSS">
+   <lable for="css">CSS</lable><br>
+   <input type="radio" id="js" name="fav_lang" value="JS">
+   <label for="js">javascript</label>
+
+<h3>Select Element</h3>
+<label for="lang">Choose your fav_lang</label>
+<select id="langs" name="langs">
+<option value="java">JAVA</option> 
+<option value="html">HTML</option>
+<option value="c++">C++</option>
+<input type="submit" value="submit">
+</select><br>
+
+<h4>Pre-selected option</h4>
+<label for="lang">Choose your fav_lang</label>
+<select id="langs" name="langs">
+<option value="java">JAVA</option>
+<option value="html">HTML</option>
+<option value="c++" selected>C++</option>
+<input type="submit" value="submit">
+</select><br><br>
+
+<h4>Visible Values</h4>
+<label for="lang">Choose your fav_lang</label>
+<select id="langs" name="langs" size="2">
+<option value="java">JAVA</option> 
+<option value="html">HTML</option>
+<option value="c++">C++</option>
+<input type="submit" value="submit">
+</select><br>
+
+<h4>Use multiple attribute for Allow Multiple Selections with Hold down the Ctrl (windows)and select options </h4>
+<label for="lang">Choose your fav_lang</label>
+<select id="langs" name="langs" multiple>
+<option value="java">JAVA</option> 
+<option value="html">HTML</option>
+<option value="c++">C++</option>
+<input type="submit" value="submit">
+</select><br>
+
+<h4>textarea element into form</h4><!--<textarea> element defines a multi-line input field -->
+<textarea name="message" rows="10" cols="30" style="width:100px; height:100px;">put some information</textarea><br>
+<input type="submit">
+<br>
+<h4>Button element</h4>
+<button type="button" onclick="alert('Hello Ramjan!')">Click me!</button>
+<br>
+
+<h4>Datalist tag int form</h4>
+<input list="browsers" name="browsers">
+<datalist id="browsers"> <!--The list attribute of the <input> element, must refer to the id attribute of the <datalist> element.And The list attribute refers to a datalist element that contains pre-defined options for an input element.-->
+<option value="opera">opera</option>
+<option value="crome">crome</option>
+<option value="safari">safari</option>
+</datalist>
+<input type="submit"><br>
+
+<h4>option_group Tag</h4>
+<label for="cars">Choose a car:</label>
+<select name="cars" id="cars">
+  <optgroup label="Swedish Cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+  </optgroup>
+  <optgroup label="German Cars">
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </optgroup>
+</select>
+<br><br>
+<input type="submit" value="Submit">
+
+</form>
+<h4>Output Tag into form</h4>
+<form oninput="x.value = parseInt(a.value) + parseInt(b.value)">
+<label>0</label>
+<input type="range" id="a" name="a" value="50">
+<label>100 +</label>
+<input type="number" id="b" name="b" value="50">
+<label>=</label>
+<output name="x" for="a b"></output>
+</form>
+
+<h3>Input types and The default value of the type attribute is "text".</h3>
+<!--"button" "checkbox" "color" "date" "datetime-local" "email" "file" "hidden" "image" "month" "number"
+    "password" "radio" "range" "reset" "search" "submit" "tel" "text" "time" "url" "week"-->
+<lable for="username">Username</lable>
+<input type="text" id="Un" name="un"><br>
+<label for="password">PassWord</label>
+<input type="password" id="pw" name="pw"><br>
+<input type="submit" value="Submit">
+<input type="reset" value="reset">
+<br><br>
+<lable for="Fav_color">Select your favorite color</lable>
+<input type="color" id="f_color" name="f_color" value="">
+<br><br>
+<lable for="Birthday">BirthDay</lable>
+<input type="date"><br>
+<label for="week">Select a week:</label><input type="week" id="week" name="week"><br>
+<input type="month" id="bdaymonth" name="bdaymonth"><br>  
+<input type="time" id="appt" name="appt"><br>
+<input type="datetime-local" id="birthdaytime" name="birthdaytime"><br>
+<!--Use the min and max attributes to add restrictions to dates:-->
+<label for="datemin">Enter a date after 2000-01-01:</label>
+<input type="date" id="datemin" name="datemin" min="2000-01-02"><br>
+<label for="datemax">Enter a date before 1980-01-01:</label>
+<input type="date" id="datemax" name="datemax" max="1979-12-31"><br>
+<input type="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9m6o4Yb5GXKQtR0cqUNARVs31u4r0Htg1Sg&usqp=CAU" width="48" height="48"><br>
+<input type="file" id="myfile" name="myfile"><br>
+<p><strong>Note:</strong> The hidden field is not shown to the user, but the data is sent when the form is submitted.</p>
+<input type="hidden" value="237jf"><br>
+<label for="quantity">Quantity (between 1 and 5):</label>
+<input type="number" id="quantity" name="quantity" min="1" max="5"><br>
+<!--The input type="search" is used for search fields (behaves like a regular text field):s-->
+<lable for="gsearch">Google Search</lable>
+<input type="search"> 
+<input type="submit"><br>
+<!--required attribute use for mandatory put the value-->
+<label for="phone">Enter a phone number:</label>
+<input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"required><br>
+<!--When user put wrong URL then browser show message Please enter url-->
+<label for="homepage">Add your URL:</label>
+<input type="url" id="homepage" name="homepage">
+<input type="submit" value="Submit">
+
+<h4>Other Input attribute insted of type</h4>
+<!--"value" "readonly" "disabled" "size" "maxlength" "min and max" "multiple" "pattern"
+    "placeholder" "required" "step" "autofocus" "height and width" "list" "autocomplete"-->
+    
+<!--The readonly attribute specifies that an input field should be read-only (cannot be changed) & value sent when submitting the form!-->
+<label>School Name</label> <input type="text" value="XYZ school" readonly> <br>
+<!--A disabled input field is unusable and un-clickable & value can not be sent when submitting the form! -->
+<label for="fname">First name:</label> <input type="text" id="fname" name="fname" value="John" disabled><br>
+<!--Size attribute default value for size is 20 and works with the following input types: text, search, tel, url, email, and password.--><!--The input maxlength attribute specifies the maximum number of characters allowed in an input field.-->
+<label for="fname">First name:</label><input type="text" id="fname" name="fname" size="50"><br>
+<label for="pin">PIN:</label><input type="text" id="pin" maxlength="4" name="pin" size="30"><br><br>
+<!--The input multiple attribute specifies that the user is allowed to enter more than one value in an input field. and works with the following input types: email, and file.-->
+<label for="files">Select files:</label> <input type="file" id="files" name="files" multiple><br>
+<!--Step attribute works with the following input types: number, range, date, datetime-local, month, time and week.and can be used together with the max and min attributes to create a range of legal values.-->
+<!--Note: Input restrictions are not foolproof, and JavaScript provides many ways to add illegal input. To safely restrict input, it must also be checked by the receiver (the server)!-->
+<label for="points">Points:</label> <input type="number" id="points" name="points" step="3">
+<input type="number" id="points" name="points" step="3" min="4" max="15"><br>
+<!--The input AUTOFOCUS attribute specifies that an input field should automatically get focus when the page loads.-->
+<!--The input height and width attributes specify the height and width of an <input type="image"> element.-->
+
+<h3>HTML Input form* Attributes</h3>  <!--It is other input tag attribute similar to form tag-->
+<!--"form" "formaction" "formenctype" "formmethod" "formtarget" "formnovalidate" "" "" "" "" ""-->
+<!--**FORM Attribute**The value of form attribute of <input> tag must be equal to the id attribute of the <form> tag.-->
+  <form id="form1">
+      <lable for="fname">First name</lable>       <input type="text">           <input type="submit"> 
+  </form> <!--The "Last name" field below is outside the form element, but still part of the form.-->
+      <lable for="lname">Last name</lable>   <input type="text" form="form1"><br><hr>
+<!--**formaction / formenctype / formmethod / formtarget **attribute overrides the action attribute of the <form> tag and works with the following input types: submit and image.-->
+  <input type="submit" formaction="/action_page2.php" formenctype="multipart/form-data" formmethod="POST" formtarget="_blank" formnovalidate="formnovalidate"> <!--data barobar bharla or nahi bharala tari novalidate mule te check nahi karnar-->
+  <!---->
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

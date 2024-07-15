@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>List</title>
+</head>
+<body>
+    <!-- Note: A list item (<li>) can contain a new list, and other HTML elements, like images and links, etc. -->
+<!-- Ordered list -->
+<!-- <ol type="1"/"A"/"a"/"I"/"i" start="50"> "Type" Attribute and  If you want to start counting from a specified number, you can use the start attribute:-->
+    <ol>
+        <li>Ramjan</li>
+        <li>Salina</li>
+        <li>Mustkim</li>
+    </ol>
+<!-- Unordered List -->
+<!-- <ul style="list-style-type:disc/circle/square/none;">  css property -->
+    <ul>
+        <li>Ramjan</li>
+        <li>Salina</li>
+        <li>Mustkim</li>
+    </ul>
+
+    <!-- HTML Description Lists [The <dl> tag defines the description list, the <dt> tag defines the term (name), and the <dd> tag describes each term:]-->
+    <dl>
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>- white cold drink</dd>
+    </dl>
+
+    <!-- Nested List for ordered and unordered list -->
+    <ol>
+        <li>Coffee</li>
+        <li>Tea
+          <ol>
+            <li>Black tea</li>
+            <li>Green tea</li>
+          </ol>
+        </li>
+        <li>Milk</li>
+      </ol>
+ <!-- Nested List for unordered list -->
+      <ul>
+        <li>Coffee</li>
+        <li>Tea
+          <ul>
+            <li>Black tea</li>
+            <li>Green tea</li>
+          </ul>
+        </li>
+        <li>Milk</li>
+      </ul>
+
+      <!-- Horizontal List with CSS -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: green;
+}
+
+li {
+  float: left;        //Use the CSS property float:left to display a list horizontally//
+}
+
+li  {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: red;
+}
+</style>
+</head>
+<body>
+
+<h2>Navigation Menu</h2>
+<p>In this example, we use CSS to style the list horizontally, to create a navigation menu:</p>
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+</body>
+</html> -->
+
+<!--------------------------------------------------------------------------------------------------------------->
+
+<!-- Block and Inline Elements/tags -->
+<h2>Block-level Elements</h2>
+<!-- <p> and <div> are block elements. The <div> element defines a division or a section in an HTML document. -->
+<!-- Here are the block-level elements in HTML:
+              <address>   <article>    <aside>   <blockquote>   <canvas>   <dd>   <div>
+              <dl>   <dt>   <fieldset>   <figcaption>   <figure>   <footer>   <form>
+              <h1>-<h6>   <header>   <hr>   <li>   <main>   <nav>   <noscript>   <ol>
+              <p>   <pre>   <section>   <table>   <tfoot>   <ul>   <video>  -->
+  <p style="border: 1px solid black">Hello World</p>
+  <div style="border: 1px solid black">Hello World</div>
+  
+  <p>The P and the DIV elements are both block elements, and they will always start on a new line and take up the full width available (stretches out to the left and right as far as it can).</p>
+
+
+<h2>Inline Elements</h2>   <!--Note: An inline element cannot contain a block-level element!-->
+<!-- An inline element does not start on a new line. An inline element only takes up as much width as necessary. -->
+<!-- Here are the inline elements in HTML:
+     <a>   <abbr>   <acronym>  <b>  <bdo>  <big>  <br>   <button>   <cite>   <code>   <dfn>   <em>  
+     <i>  <img>  <input>  <kbd>  <label>  <map>  <object>  <output>  <q>  <samp>  <script>  <select>
+     <small>  <span>  <strong>  <sub>  <sup>  <textarea>  <time>  <tt>  <var> -->
+
+<p>This is an inline span <span style="border: 1px solid black">Hello World</span> element inside a paragraph.</p>
+
+<p>The SPAN element is an inline element, and will not start on a new line and only takes up as much width as necessary.</p>
+
+
+
+
+
+
+
+</body>
+</html>
